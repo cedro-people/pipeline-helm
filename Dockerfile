@@ -1,9 +1,9 @@
 FROM alpine:3
 
-ENV HELM_VERSION=3.4.0
-ENV KUBECTL_VERSION=1.19.3
+ENV HELM_VERSION=3.5.0
+ENV KUBECTL_VERSION=1.20.3
 
-RUN apk add --no-cache libintl curl ca-certificates file openssl && \
+RUN apk add --no-cache libintl curl ca-certificates file openssl bash && \
     apk add --no-cache --virtual build_deps gettext && \
     cp /usr/bin/envsubst /usr/local/bin/ && \
     curl -L https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz |tar xvz && \
