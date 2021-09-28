@@ -7,5 +7,5 @@ FROM cedropeople/pipeline-helm
 ```
 
 ## Content
-- helm v3.4.0
-- kubectl v1.19.3
+- helm v3.7.0
+- kubectl v1.22.2
